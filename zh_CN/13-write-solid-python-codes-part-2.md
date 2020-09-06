@@ -31,7 +31,7 @@
 > Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.
 > - 出处: [Liskov substitution principle - Wikipedia](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
 
-如果把它比较通俗的翻译过来，大概是这样：**当你使用继承时，子类（派生类）对象应该可以在程序中替代父类（基类）对象使用，而不破坏程序原本的功能。**
+如果把它比较通俗的翻译过来，大概是这样：**当你使用继承时，子类（派生类）对象应该可以在程序中替代父类（基类）对象使用，而不破坏程序原本的功能。**【子类重写父类方法时，可以改变方法的具体行为，但不应该改变方法的用途】
 
 光说有点难理解，让我们用代码来看看一个在 Python 中违反 Liskov 原则的例子。
 
